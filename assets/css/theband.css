@@ -1,0 +1,464 @@
+/* reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+.col{
+    float: left;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+#wrapper{
+
+}
+
+#header{
+    height: 46.5px;
+    background-color: black;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav > li > a{
+    color: white; 
+}
+
+#nav li a{
+    line-height: 46.5px;
+    display: block;
+    text-decoration: none;
+    padding: 0 24px;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .subnav a{
+    color: #000
+}
+
+#icon-search:hover{
+    color: #fff;
+    background-color: #f44336!important;
+    cursor: pointer;
+}
+
+#icon-search{
+    float: right;
+    color: white;
+    line-height: 46.5px;
+    padding: 0 20px;
+}
+
+#slider{
+    margin-top: 46.5px;
+    padding-top: 50%;
+    position: relative;
+    background: url("https://www.w3schools.com/w3images/chicago.jpg") top center / cover no-repeat;
+}
+
+#slider #text-content{
+    color: #fff;
+    position: absolute;
+    bottom: 47px;
+    text-align: center;
+    width: 100%;
+    font-weight: 100;
+}
+
+#slider #text-content #title{
+    font-size: 24px;
+}
+
+#slider #text-content #content{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content{
+    height: 100%;
+}
+
+#content .content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+
+#content .content-section .section-heading{
+    text-align: center;
+    text-decoration: 4px;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+#content .content-section .section-sub-heading{
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .content-section .about-text{
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.content-section .member-item{
+    float: left ;
+    width: 33.33333%;
+    text-align: center;
+}
+
+.content-section .member-item .member-name{
+   
+    margin-top: 72px;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.content-section .member-item img
+{
+    height: 154px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+.tour-section{
+    background-color: #000;
+}
+
+.tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+
+}
+
+.tickets-list li{
+    color: #757575;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    list-style-type: none;
+}
+
+.tickets-list .sold-out{
+    background-color: #f44336;
+    color: white;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+.tickets-list .quatity{
+    float: right;
+    background: #333;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -2px;
+}
+
+.place-list{
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-bottom: 32px;
+}
+
+.place-item{
+    float: left;
+    width: 33.3333333%;
+    padding: 0 8px;
+}   
+
+.place-img{
+    display: block;
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+}
+
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-date{
+    margin-top: 15px;
+    color: #757575
+}
+
+.place-content{
+    margin-top: 15px
+}
+
+.place-buy{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 12px 12px;
+    display: inline-block;
+    margin-top: 15px;
+    border:none;
+}
+
+.place-buy:hover{
+    color: #000;
+    background-color: #ccc; 
+}
+
+#footer{
+
+}
+
+.modal{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.open{
+    display: flex;
+}
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    min-height: 300px;
+    position: relative;
+    max-width: calc(100% - 32px);
+    animation: modalFadeIn ease 0.5s;
+}
+
+.modal-header{
+    background-color: #009688;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal-header > span{
+    margin-right: 16px;
+    font-size: 32px;
+}
+
+.modal-close{
+    position: absolute;
+    color: #fff;
+    right: 0;
+    cursor: pointer;
+}
+
+.modal-close > span {
+    padding: 12px 12px;
+}
+
+.modal-close > span:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+.modal-body{
+    padding: 16px;
+}
+
+.modal-label{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.modal-input{
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+#button-pay {
+    background-color: #009688;
+    border: none;
+    width: 100%;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+}
+
+#button-pay:hover{
+    color: #000;
+    background-color: #ccc; 
+}
+
+.modal-footer{
+    float: right;
+    padding: 8px;
+}
+
+.modal-footer a{
+    color: #2196F3;
+}
+
+@keyframes modalFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-130px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-infor{
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-infor span{
+    display: inline-block;
+    width: 30px;
+}
+
+.contact-form{
+    font-size: 15px;
+    
+}
+
+.contact-input-infor input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    display: block;
+    
+}
+
+.form-control-email {
+    float: right;
+}
+
+.contact-input-mess input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#contact-send{
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    float: right;
+    margin-top: 10px;
+}
+
+#contact-send:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
+.map-section img{
+    width: 100%;
+}
+
+.src-theband{
+    display: inline-block;
+}
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.social-list span{
+    color: #757575;
+}
+
+#footer .src-theband p{
+    margin: 15px 0;
+    font-size: 15px;
+    color: #757575;
+}
+
+#footer .src-theband p a{
+    color: #757575
+}
