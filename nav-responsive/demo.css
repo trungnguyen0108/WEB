@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    background-color: black;
+}
+
+.nav{
+    
+    min-height: 46px;
+    width: 100%;
+    display: flex;
+}
+
+.nav p a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+    display: inline-block;
+}
+
+.nav p:hover a{
+    color: black;
+    background-color: wheat;
+}
+
+#reorder{
+    color:#fff;
+    font-size:  44px;
+    display: none;
+}
+
+.overlay{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.nav-mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.3s, opacity linear 0.3s;
+}
+
+.nav-mobile p{
+    margin: 32px;
+}
+
+.nav-mobile p a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.nav-mobile-close span{
+    font-size: 36px;
+    float: right;
+}
+
+#nav-input-mobile:checked ~ .overlay{
+    display: block;
+}
+
+#nav-input-mobile:checked ~ .nav-mobile{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@media (max-width: 1023px)
+{
+    #reorder{
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+}
+
+@keyframes Fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1s;
+    }
+}
