@@ -233,6 +233,7 @@ html {
 
 .place-img{
     display: block;
+    max-width: 100%;
 }
 
 .place-img:hover{
@@ -463,3 +464,4 @@ html {
 #footer .src-theband p a{
     color: #757575
 }
+
