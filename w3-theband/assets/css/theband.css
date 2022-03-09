@@ -35,13 +35,14 @@ html {
 }
 
 #header{
-    height: 46.5px;
+    height: 46px;
     background-color: black;
     position: fixed;
     right: 0;
     left: 0;
     top: 0;
     z-index: 1;
+    
 }
 
 #nav{
@@ -92,12 +93,26 @@ html {
     color: #000
 }
 
+
 #icon-search:hover{
     color: #fff;
     background-color: #f44336!important;
     cursor: pointer;
 }
 
+#icon-menu-mobile:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+#icon-menu-mobile{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+#icon-menu-mobile,
 #icon-search{
     float: right;
     color: white;
@@ -106,7 +121,7 @@ html {
 }
 
 #slider{
-    margin-top: 46.5px;
+    margin-top: 46px;
     padding-top: 50%;
     position: relative;
     background: url("https://www.w3schools.com/w3images/chicago.jpg") top center / cover no-repeat;
@@ -136,9 +151,12 @@ html {
 
 #content .content-section{
     width: 800px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 64px 0;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 #content .content-section .section-heading{
@@ -464,4 +482,3 @@ html {
 #footer .src-theband p a{
     color: #757575
 }
-

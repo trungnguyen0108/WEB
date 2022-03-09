@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Band</title>
-  <link rel="stylesheet" href="./assets/css/grid.css">
   <link rel="stylesheet" href="./assets/css/theband.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 
@@ -20,7 +20,7 @@
         <li><a href="#tour">TOUR</a></li>
         <li><a href="#contact">CONTACT</a></li>
         <li>
-          <a href="">MORE<span class="material-icons-outlined" id="icon-arrow-down">
+          <a href="#">MORE<span class="material-icons-outlined" id="icon-arrow-down">
               arrow_drop_down
             </span></a>
           <ul class="subnav">
@@ -32,6 +32,10 @@
       </ul>
       <span class="material-icons-outlined" id="icon-search">
         search
+      </span>
+
+      <span class="material-icons-outlined" id="icon-menu-mobile">
+        menu
       </span>
     </div>
 
@@ -130,18 +134,18 @@
           <p class="section-sub-heading">Fan? Drop a note!</p>
 
           <div class="row contact-content">
-            <div class="col col-half contact-infor">
+            <div class="col col-half s-col-full contact-infor">
               <p><span class="material-icons-outlined">location_on</span>Chicago, US</p>
               <p><span class="material-icons-outlined">phone</span>Phone: +00 151515</p>
               <p><span class="material-icons-outlined">email</span>Email: mail@mail.com</p>
             </div>
-            <div class="col col-half contact-form">
+            <div class="col col-half s-col-full contact-form">
               <form action="">
                 <div class="row contact-input-infor">
-                  <div class="col col-half">
+                  <div class="col col-half s-col-full">
                     <input type="text" placeholder="Name" required class="form-control">
                   </div>
-                  <div class="col col-half ">
+                  <div class="col col-half s-col-full container-input-email">
                     <input type="email" placeholder="Email" required class="form-control-email">
                   </div>
                   <div class="clear"></div>
@@ -238,6 +242,41 @@
       modalContainer.addEventListener('click', (event) => {
         event.stopPropagation()
       })
+    </script>
+
+    <script>
+      let header = document.getElementById("header")
+      let mobileMenu = document.getElementById("icon-menu-mobile")
+      
+      mobileMenu.onclick = () => {
+        let isClosed = header.clientHeight === 46
+        if(isClosed)
+        {
+          header.style.height = 'auto'
+        }
+        else
+        {
+          header.style.height = '46px'
+        }
+      }
+
+      let menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+      for (let i = 0; i < menuItems.length; i++)
+      {
+        let menuItem = menuItems[i]
+
+        menuItem.onclick = function(event) {
+          let isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav')
+          if (!isParentMenu)
+          {
+            header.style.height = null
+          }
+          else
+          {
+            event.preventDefault()
+          }
+        }
+      }
     </script>
 </body>
 
