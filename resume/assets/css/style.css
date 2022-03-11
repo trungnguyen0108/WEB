@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clear{
+    clear: both;
+    padding-bottom: 100px;
+}
+
+.home {
+    background: url("https://www.proofhub.com/wp-content/uploads/2021/01/improve-work-performance-scaled.jpg") top center / cover no-repeat;
+    
+    min-height: 650px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    padding-bottom: 60px;
+}
+
+.navbar .title{
+    padding-left: 50px;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+}
+
+.list li a{
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 16px;
+    color: black;
+    line-height: 50px;
+}
+
+.caption {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.caption p{
+    font-size: 16px;
+}
+
+.caption h1{
+    font-size: 40px;
+}
+
+.caption #name{
+    margin: 30px 0;
+}
+
+/* content */
+/* about me */
+.about-me{
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.intro .title{
+    position: relative;
+    font-size: 30px;
+}
+
+.intro .title::after{
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    background: #0a3f8f;
+    height: 1px;
+    width: 78px;
+}
+
+.intro .content{
+    padding-top: 50px;
+}
+
+.intro p{
+    font-size: 16px;
+    line-height: 1.8;
+    color: #7e7e7e
+}
+
+.about-me img{
+    width: 100%;
+}
+
+.infor{
+    padding: 16px 0;
+}
+
+.btn-contact{
+    background: none;
+    font-weight: bold;
+    border: none;
+    padding: 8px 20px;
+    background-color: #0a3f8f;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-contact:hover
+{
+    color: #0a3f8f;
+    background-color: #fff;
+    border: solid 1px #0a3f8f;
+    animation: FadeIn ease 1s;
+}
+
+@keyframes FadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* skill */
+
+.item h6{
+    padding-bottom: 8px;
+    padding-top: 32px;
+    font-size: 14px;
+}
+
+.skills-progress{
+    width: 100%;
+    height: 8px;
+    position: relative;
+    background: #3333333b;
+}
+
+.skills-progress span{
+    height: 100%;
+    width: 90%;
+    background: #0a3f8f;
+    left: 0;
+    position: absolute;
+}
+
+.skills-progress span::after{
+    content: attr(data-value);
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    padding: 2px 5px;
+    text-align: center;
+    background-color: #f7f7f7;
+    font-size: 10px;
+}
+
+.section-head{
+    font-size: 35px;
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.section-head::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 50px);
+    height: 2px;
+    width: 100px;
+    background: #0a3f8f;
+    z-index: 2;
+}
+
+.resume .content .main-icon{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: solid 2px #eee;
+    color: #0a3f8f;
+    font-size: 38px;
+    text-align: center;
+    margin: 0 auto 50px
+}
+
+.resume .content .main-icon span {
+    display: inline-block;
+    font-size: 36px;
+}
+
+.resume .content .main-icon:after {
+        content: '';
+        width: 2px;
+        height: 380px;
+        background: #eee;
+        position: absolute;
+        bottom: -380px;
+        left: calc(50% - 1px);
+}
+
+.inf{
+    text-align: right;
+}
+
+.inf .date {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 28px;
+    background: #0a3f8f;
+    color: #fff;
+    border-radius: 20px;
+    position: relative;
+}
+
+.cont h6{
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+.cont-title{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.cont p{
+    line-height: 1.8;
+    margin: 0;
+    font-size: 16px;
+    color: #7e7e7e;
+}
+
+.cont::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #FF305B;
+    background: #fff;
+    position: absolute;
+    top: 0px;
+    left: -22px;
+    z-index: 9;
+}
+
+.cont-2{
+    text-align: right;
+    padding-top: 66px;
+}
+
+.date-2{
+    text-align: left;
+    padding-top: 66px;
+}
+
+.date-3, .cont-3{
+    padding-top: 66px;
+}
