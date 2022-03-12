@@ -15,20 +15,28 @@ html{
 }
 
 .home {
-    background: url("https://www.proofhub.com/wp-content/uploads/2021/01/improve-work-performance-scaled.jpg") top center / cover no-repeat;
     
     min-height: 650px;
+    margin-top: 50px;
 }
+
+
 
 .navbar{
-    display: flex;
     justify-content: space-between;
-    padding: 20px 0;
-    padding-bottom: 60px;
+    position: fixed;
+    display: flex;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    background-color: #0a3f8f;
 }
 
-.navbar .title{
+.navbar .title a{
     padding-left: 50px;
+    color: rgb(226 226 226);
+    text-decoration: none;
 }
 
 .list {
@@ -38,15 +46,33 @@ html{
 
 .list li a{
     text-decoration: none;
-    font-size: 14px;
-    padding: 0 16px;
-    color: black;
+    font-size: 16px;
+    padding: 10px 16px;
+    color: rgb(226 226 226);
     line-height: 50px;
+    font-weight: 500;
 }
 
+.list li:hover a{
+    border-bottom: solid 5px #fff;
+    animation: FadeIn ease 0.5s;
+}
+
+
 .caption {
-    margin: 50px 0;
+    background: url("/resume/assets/img/developer.jpg") top center / cover no-repeat;
+    margin-top: 46px;
+    padding-top: 50%;
+    position: relative;
+}
+
+.caption .text{
+    color: #fff;
+    position: absolute;
+    bottom: 200px;
     text-align: center;
+    width: 100%;
+    font-weight: 100;
 }
 
 .caption p{
@@ -63,9 +89,14 @@ html{
 
 /* content */
 /* about me */
+.container-content{
+    margin-top: 50px;
+}
+
+
 .about-me{
-    padding-top: 100px;
-    padding-bottom: 60px;
+    padding: 100px 0;
+    border-bottom: solid 2px #eee ;
 }
 
 .intro .title{
@@ -101,7 +132,7 @@ html{
     padding: 16px 0;
 }
 
-.btn-contact{
+.btn{
     background: none;
     font-weight: bold;
     border: none;
@@ -112,7 +143,7 @@ html{
     cursor: pointer;
 }
 
-.btn-contact:hover
+.btn:hover
 {
     color: #0a3f8f;
     background-color: #fff;
@@ -130,6 +161,13 @@ html{
 }
 
 /* skill */
+
+.skill{
+    padding: 60px 0;
+    border-bottom: solid 2px #eee ;
+    background-color: #eee;
+}
+
 
 .item h6{
     padding-bottom: 8px;
@@ -181,6 +219,42 @@ html{
     background: #0a3f8f;
     z-index: 2;
 }
+
+.resume {
+    padding: 60px 0;
+    border-bottom: solid 2px #eee;
+}
+
+.tabs-icon ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.tabs-icon ul li{
+    display: inline-block;
+    padding: 10px 44px;
+    background: #0a3f8f;
+    color: #fff;
+    border-radius: 50px;
+    margin: 0 -2px;
+    cursor: pointer;
+}
+
+.tabs-icon ul li:last-child{
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    font-size: 20px;
+}
+
+.tabs-icon ul li:first-child{
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    font-size: 20px;
+}
+
 
 .resume .content .main-icon{
     position: relative;
@@ -267,4 +341,38 @@ html{
 
 .date-3, .cont-3{
     padding-top: 66px;
+}
+
+/* dowload CV */
+
+.content-dow-cv{
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.content-dow-cv h2{
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-size: 50px;
+}
+
+.content-dow-cv h6{
+    margin-bottom: 30px;
+    font-weight: 300;
+    font-size: 18px;
+    color: #222222;
+}
+
+.content-dow-cv a{
+    text-decoration: none;
+}
+
+/* footer */
+
+.footer {
+    background-image: url("/resume/assets/img/img-main.jpg");
+    min-height: 400px;
+    filter: grayscale(100%);
+    
 }

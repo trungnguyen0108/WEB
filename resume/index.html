@@ -8,14 +8,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>CV</title>
+    <title>My Resume</title>
 </head>
 
 <body>
     <div class="main">
         <div class="home">
             <div class="navbar">
-                <h1 class="title">Góc của Trung</h1>
+                <h1 class="title"> <a href="">CV</a> </h1>
                 <ul class="list">
                     <li><a href="#">Trang chủ</a></li>
                     <li><a href="#about-me">Giới thiệu</a></li>
@@ -27,13 +27,16 @@
             </div>
 
             <div class="caption">
-                <p>Xin chào,</p>
-                <h1 id="name">TÔI LÀ THÀNH TRUNG</h1>
-                <h1>WED DEVELOPER</h1>
+                <div class="text">
+                    <p>Xin chào,</p>
+                    <h1 id="name">TÔI LÀ THÀNH TRUNG</h1>
+                    <h1>WED DEVELOPER</h1>
+                </div>
             </div>
         </div>
 
-        <div class="content grid wide">
+        <div class="container-content grid wide">
+            <!-- giới thiệu -->
             <div class="about-me " id="about-me">
                 <div class="row">
                     <img class="col l-5" src="./assets/img/trung.png" alt="me">
@@ -45,7 +48,7 @@
                             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                             aliqua. Ut enim ad minim veniam, ullamco laboris nisi ut aliquip ex ea commodo</p>
                         <div class="infor row">
-                            <h5 class="col l-4">Thành Trung</h5>
+                            <h5 class="col l-4">Nguyễn Thành Trung</h5>
                             <h5 class="col l-4">01/08/2001</h5>
                             <h5 class="col l-4">Linh Trung, TP Thủ Đức</h5>
                         </div>
@@ -55,15 +58,15 @@
                             <h5 class="col l-4">nguyentrung181995@gmail.com</h5>
                         </div>
                         <div class="infor">
-                            <button class="btn-contact">Liên hệ tôi</button>
+                            <button class="btn">Liên hệ tôi</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- skill -->
-            <div class="skill">
-                <div class="section-head" id="skill">
+            <!-- kĩ năng -->
+            <div class="skill" id="skill">
+                <div class="section-head">
                     <h3>SKILL</h3>
                 </div>
                 <div class="row">
@@ -97,88 +100,185 @@
                         </div>
                     </div>
                 </div>
-                <div class="clear"></div>
+
             </div>
 
+            <!-- học vấn -->
             <div class="resume" id="education">
                 <div class="section-head">
-                    <h3>EDUCATION</h3>
+                    <h3>MY RESUME</h3>
                 </div>
 
-                <div class="content ">
-                    <div class="main-icon">
-                        <span class="material-icons-outlined">school</span>
+                <div class="tabs-icon">
+                    <ul class="row">
+                        <li class="btn" onclick="openTab('tab-1')">
+                            <span class="material-icons-outlined">
+                                business_center
+                            </span>
+                            <h6 class="title">EXPERIENCE</h6>
+                        </li>
+                        <li class="btn" onclick="openTab('tab-2')">
+                            <span class="material-icons-outlined">
+                                school
+                            </span>
+                            <h6 class="title">EDUCATION</h6>
+                        </li>
+                    </ul>
+
+                    <script>
+                        function openTab(tabName) {
+                            let x = document.getElementsByClassName("tab")
+                            console.log(x)
+                            for (let i = 0; i < x.length; i++) {
+                                x[i].style.display = "none"
+                            }
+                            document.getElementById(tabName).style.display = "block"
+                        }
+                    </script>
+                </div>
+
+                <div class="tab tab-experience" id="tab-1" style="display: none;">
+                    <div class="content">
+                        <div class="main-icon">
+                            <span class="material-icons-outlined">
+                                business_center
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col l-6">
+                            <div class="inf">
+                                <span class="date">
+                                    2019-2022
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col l-6">
+                            <div class="cont">
+                                <h6 class="cont-title">
+                                    ABC UNIVERSITY OF LOS ANGELES.
+                                </h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+
+                        <div class="col l-6">
+                            <div class="cont cont-2">
+                                <h6 class="cont-title">
+                                    ABC UNIVERSITY OF LOS ANGELES.
+                                </h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+
+                        <div class="col l-6">
+                            <div class="inf date-2">
+                                <span class="date">
+                                    2019-2022
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col l-6">
+                            <div class="inf date-3">
+                                <span class="date">
+                                    2019-2022
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col l-6">
+                            <div class="cont cont-3">
+                                <h6 class="cont-title">
+                                    ABC UNIVERSITY OF LOS ANGELES.
+                                </h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col l-6">
-                        <div class="inf">
-                            <span class="date">
-                                2019-2022
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col l-6">
-                        <div class="cont">
-                            <h6 class="cont-title">
-                                ABC UNIVERSITY OF LOS ANGELES.
-                            </h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua</p>
-                        </div>
-                    </div>
 
-                    
-
-                    <div class="col l-6">
-                        <div class="cont cont-2">
-                            <h6 class="cont-title">
-                                ABC UNIVERSITY OF LOS ANGELES.
-                            </h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua</p>
+                <div class="tab tab-education" id="tab-2">
+                    <div class="content">
+                        <div class="main-icon">
+                            <span class="material-icons-outlined">school</span>
                         </div>
                     </div>
-
-                    <div class="col l-6">
-                        <div class="inf date-2">
-                            <span class="date">
-                                2019-2022
-                            </span>
+                    <div class="row">
+                        <div class="col l-6">
+                            <div class="inf">
+                                <span class="date">
+                                    2019-2022
+                                </span>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="col l-6">
-                        <div class="inf date-3">
-                            <span class="date">
-                                2019-2022
-                            </span>
+                        <div class="col l-6">
+                            <div class="cont">
+                                <h6 class="cont-title">
+                                    ABC UNIVERSITY OF LOS ANGELES.
+                                </h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col l-6">
-                        <div class="cont cont-3">
-                            <h6 class="cont-title">
-                                ABC UNIVERSITY OF LOS ANGELES.
-                            </h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua</p>
+
+                        <div class="col l-6">
+                            <div class="cont cont-2">
+                                <h6 class="cont-title">
+                                    ABC UNIVERSITY OF LOS ANGELES.
+                                </h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua</p>
+                            </div>
+                        </div>
+
+                        <div class="col l-6">
+                            <div class="inf date-2">
+                                <span class="date">
+                                    2019-2022
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col l-6">
+                            <div class="inf date-3">
+                                <span class="date">
+                                    2019-2022
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col l-6">
+                            <div class="cont cont-3">
+                                <h6 class="cont-title">
+                                    ABC UNIVERSITY OF LOS ANGELES.
+                                </h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="clear"></div>
-            <div class="service">
-                <div class="section-head">
-                    <h3>MY SERVICE</h3>
-                </div>
+
+            <div class="content-dow-cv">
+                <h2>Let's work together !</h2>
+                <h6>I am available for freelance projects.</h6>
+                <a href="./assets/file/Xanh-dương-Hình-học-Kỹ-sư-robot-Sơ-yếu-lý-lịch.pdf"><span class="btn">Dowload CV
+                        <span class="material-icons-outlined">
+                            cloud_download
+                        </span></span></a>
             </div>
         </div>
 
+        <div class="footer">
 
+        </div>
+    </div>
 
-        
-    </div>
-    </div>
 </body>
 
 </html>
