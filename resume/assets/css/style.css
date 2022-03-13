@@ -30,7 +30,7 @@ html{
     left: 0;
     top: 0;
     z-index: 1;
-    background-color: #0a3f8f;
+    background-color: #222222;
 }
 
 .navbar .title a{
@@ -60,7 +60,7 @@ html{
 
 
 .caption {
-    background: url("/resume/assets/img/developer.jpg") top center / cover no-repeat;
+    background: url("/resume/assets/img/img-main.jpg") top center / cover no-repeat;
     margin-top: 46px;
     padding-top: 50%;
     position: relative;
@@ -132,6 +132,11 @@ html{
     padding: 16px 0;
 }
 
+.infor a{
+    color: #fff;
+    text-decoration: none;
+}
+
 .btn{
     background: none;
     font-weight: bold;
@@ -165,7 +170,9 @@ html{
 .skill{
     padding: 60px 0;
     border-bottom: solid 2px #eee ;
-    background-color: #eee;
+    background-color: rgb(226 226 226);
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 
@@ -348,6 +355,7 @@ html{
 .content-dow-cv{
     text-align: center;
     padding-bottom: 60px;
+    padding-top: 40px;
 }
 
 .content-dow-cv h2{
@@ -371,8 +379,36 @@ html{
 /* footer */
 
 .footer {
-    background-image: url("/resume/assets/img/img-main.jpg");
-    min-height: 400px;
-    filter: grayscale(100%);
-    
+    background-color: #222222;
+    min-height: 200px;
+    display: flex;
+    text-align: center;
 }
+
+.footer .item{
+    flex: 1;
+    justify-content: center;
+    padding-top: 50px;
+    color: #eee;
+}
+
+.footer .item span:first-child{
+    font-size: 34px;
+    color: #0a3f8f;
+}
+
+.footer .item span:last-child{
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.footer .item h6{
+    font-size: 17px;
+}
+
+.footer .item h6 a{
+    text-decoration: none;
+    color: #eee;
+    font-weight: 100;
+}
+

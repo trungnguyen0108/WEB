@@ -287,6 +287,7 @@ html {
     border:none;
 }
 
+
 .place-buy:hover{
     color: #000;
     background-color: #ccc; 
@@ -482,3 +483,4 @@ html {
 #footer .src-theband p a{
     color: #757575
 }
+
