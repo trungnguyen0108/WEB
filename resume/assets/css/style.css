@@ -30,7 +30,12 @@ html{
     left: 0;
     top: 0;
     z-index: 1;
+    height: 50px;
     background-color: #222222;
+}
+
+#icon-menu-mobile{
+    display: none;
 }
 
 .navbar .title a{
@@ -69,10 +74,11 @@ html{
 .caption .text{
     color: #fff;
     position: absolute;
-    bottom: 200px;
     text-align: center;
     width: 100%;
     font-weight: 100;
+    justify-content: center;
+    bottom: 200px;
 }
 
 .caption p{
@@ -336,6 +342,11 @@ html{
     z-index: 9;
 }
 
+.container-date-2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 .cont-2{
     text-align: right;
     padding-top: 66px;
@@ -411,4 +422,9 @@ html{
     color: #eee;
     font-weight: 100;
 }
+
+
+/* responsive */
+
+/* tablet */
 

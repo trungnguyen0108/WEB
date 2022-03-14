@@ -8,13 +8,14 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>My Resume</title>
 </head>
 
 <body>
     <div class="main">
         <div class="home">
-            <div class="navbar">
+            <div class="navbar" id="home">
                 <h1 class="title"> <a href="">CV</a> </h1>
                 <ul class="list">
                     <li><a href="#">HOME</a></li>
@@ -23,7 +24,23 @@
                     <li><a href="#education">MY RESUME</a></li>
                     <li><a href="#footer">CONTACT</a></li>
                 </ul>
+
+                <ul class="list" id="list">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about-me">ABOUT ME</a></li>
+                    <li><a href="#skill">SKILL</a></li>
+                    <li><a href="#education">MY RESUME</a></li>
+                    <li><a href="#footer">CONTACT</a></li>
+                </ul>
+
+                <span class="material-icons-outlined" id="icon-menu-mobile">
+                    menu
+                </span>
+
+                
             </div>
+
+
 
             <div class="caption">
                 <div class="text">
@@ -38,8 +55,8 @@
             <!-- giới thiệu -->
             <div class="about-me " id="about-me">
                 <div class="row">
-                    <img class="col l-5" src="./assets/img/trung.png" alt="me">
-                    <div class="col l-7 intro">
+                    <img class="col l-5 c-12" src="./assets/img/trung.png" alt="me">
+                    <div class="col l-7 c-12 intro">
                         <h1 class="title">More Info About Me</h1>
                         <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -47,17 +64,17 @@
                             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                             aliqua. Ut enim ad minim veniam, ullamco laboris nisi ut aliquip ex ea commodo</p>
                         <div class="infor row">
-                            <h5 class="col l-4">Nguyễn Thành Trung</h5>
-                            <h5 class="col l-4">01/08/2001</h5>
-                            <h5 class="col l-4">Linh Trung, TP Thủ Đức</h5>
+                            <h5 class="col l-4 c-12">Nguyễn Thành Trung</h5>
+                            <h5 class="col l-4 c-12">01/08/2001</h5>
+                            <h5 class="col l-4 c-12">Linh Trung, TP Thủ Đức</h5>
                         </div>
                         <div class="infor row">
-                            <h5 class="col l-4">Sinh viên</h5>
-                            <h5 class="col l-4">(+84) 346 417 497</h5>
-                            <h5 class="col l-4">nguyentrung181995@gmail.com</h5>
+                            <h5 class="col l-4 c-12">Sinh viên</h5>
+                            <h5 class="col l-4 c-12">(+84) 346 417 497</h5>
+                            <h5 class="col l-4 c-12">nguyentrung181995@gmail.com</h5>
                         </div>
                         <div class="infor">
-                           <a href="#footer" class="btn">Liên hệ tôi</a>
+                            <a href="#footer" class="btn">Liên hệ tôi</a>
                         </div>
                     </div>
                 </div>
@@ -69,14 +86,14 @@
                     <h3>SKILL</h3>
                 </div>
                 <div class="row">
-                    <div class="item col l-6 m-12">
-                        <h6</h6>
+                    <div class="item col l-6 m-12 c-12">
+                        <h6>Web Design</h6>
                         <div class="skills-progress">
                             <span data-value="90%"></span>
                         </div>
                     </div>
 
-                    <div class="item col l-6 m-12">
+                    <div class="item col l-6 m-12 c-12">
                         <h6>Web Design</h6>
                         <div class="skills-progress">
                             <span data-value="90%"></span>
@@ -85,14 +102,14 @@
                 </div>
 
                 <div class="row">
-                    <div class="item col l-6 m-12">
+                    <div class="item col l-6 m-12 c-12">
                         <h6>Web Design</h6>
                         <div class="skills-progress">
                             <span data-value="90%"></span>
                         </div>
                     </div>
 
-                    <div class="item col l-6 m-12">
+                    <div class="item col l-6 m-12 c-12">
                         <h6>Web Design</h6>
                         <div class="skills-progress">
                             <span data-value="90%"></span>
@@ -136,7 +153,7 @@
                     </script>
                 </div>
 
-                <div class="tab tab-experience" id="tab-1" >
+                <div class="tab tab-experience" id="tab-1">
                 </div>
 
                 <div class="tab tab-education" id="tab-2" style="display: none;">
@@ -164,23 +181,27 @@
                             </div>
                         </div>
 
-                        <div class="col l-6">
-                            <div class="cont cont-2">
-                                <h6 class="cont-title">
-                                    ABC UNIVERSITY OF LOS ANGELES.
-                                </h6>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua</p>
+                        <div class="container-date-2 col l-12">
+                            <div class="col l-6">
+                                <div class="inf date-2">
+                                    <span class="date">
+                                        2019-2022
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="col l-6">
+                                <div class="cont cont-2">
+                                    <h6 class="cont-title">
+                                        ABC UNIVERSITY OF LOS ANGELES.
+                                    </h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua</p>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col l-6">
-                            <div class="inf date-2">
-                                <span class="date">
-                                    2019-2022
-                                </span>
-                            </div>
-                        </div>
+
 
                         <div class="col l-6">
                             <div class="inf date-3">
@@ -200,6 +221,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <div class="content-dow-cv">
@@ -216,7 +238,7 @@
             <div class="item">
                 <span class="material-icons-outlined">
                     phone
-                    </span>
+                </span>
                 <h6>
                     Phone: <br>
                     <span>(+84) 346 417 497</span>
@@ -226,11 +248,11 @@
             <div class="item">
                 <span class="material-icons-outlined">
                     near_me
-                    </span>
+                </span>
                 <h6>
                     Address: <br>
                     <span>
-                        Quận Thủ Đức, 
+                        Quận Thủ Đức,
                         Thành phố Hồ Chí Minh
                     </span>
                 </h6>
@@ -239,28 +261,47 @@
             <div class="item">
                 <span class="material-icons-outlined">
                     email
-                    </span>
+                </span>
                 <h6>
                     Email: <br>
                     <span>
                         nguyentrung181995@gmail.com
                     </span>
                 </h6>
-            </div> 
+            </div>
 
             <div class="item">
                 <span class="material-icons-outlined">
                     public
-                    </span>
+                </span>
                 <h6>
                     Facebook: <br>
                     <a href="https://www.facebook.com/trungnguyen182001/">
                         Nguyễn Trung
                     </a>
                 </h6>
-            </div> 
+            </div>
         </div>
     </div>
+
+    <script>
+        let home = document.getElementById("home")
+        let list = document.getElementById("list")
+        let mobileMenu = document.getElementById("icon-menu-mobile")
+
+        mobileMenu.onclick = () => {
+            let isClosed = home.clientHeight === 50
+            if (isClosed) {
+                home.style.height = 'auto'
+                list.style.display = 'inline-block'
+                
+            }
+            else {
+                home.style.height = '50px'
+                list.style.display = 'none'
+            }
+        }
+    </script>
 
 </body>
 

@@ -1,0 +1,134 @@
+@media (min-width: 740px) and (max-width: 1023px)
+{
+    .caption .text{
+        bottom: 100px;
+    }
+
+    .home{
+        min-height: 450px;
+    }
+
+    .about-me{
+        padding: 0;
+    }
+
+    .about-me .title{
+        padding-top: 40px;
+    }
+
+    .about-me .infor:last-child{
+        padding-bottom: 45px;
+    }
+
+    .resume .content .main-icon{
+        margin: 0;
+    }
+
+
+    .inf{
+        padding-left: 50px;
+        padding-top: 37px;
+    }
+
+    .cont{
+        padding-left: 50px;
+        padding-top: 16px;
+    }
+
+    .cont-2{
+        text-align: left;
+    }
+
+    .container-date-2{
+        display: block;
+    }
+
+}
+
+@media (max-width: 739px){
+    .main{
+        overflow: hidden;
+    }
+
+    .container-content{
+        padding: 0 16px;
+    }
+
+    .list{
+        display: none;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+
+    .caption .text{
+        bottom: 30px;
+    }
+
+    .caption h1{
+        font-size: 20px;
+    }
+
+    .caption #name{
+        margin: 15px 0;
+    }
+
+    #icon-menu-mobile{
+        display: block;
+        color: #fff;
+        padding: 5px 15px;
+        line-height: 46px;
+    }
+
+    .home{
+        min-height: 150px;
+    }
+
+    .intro .title{
+        padding-top: 15px;
+    }
+    
+    .infor{
+        padding: 0px;
+    }
+
+    .infor h5{
+        padding: 8px 0px;
+    }
+
+    .infor:last-child{
+        padding-top: 10px;
+    }
+
+    .resume .content .main-icon{
+        margin: 0;
+    }
+
+
+    .inf{
+        padding-left: 50px;
+        padding-top: 37px;
+    }
+
+    .cont{
+        padding-left: 50px;
+        padding-top: 16px;
+    }
+
+    .cont-2{
+        text-align: left;
+    }
+
+    .container-date-2{
+        display: block;
+    }
+
+    .resume .content .main-icon:after{
+        height: 438px;
+        bottom: -437px;
+    }
+
+    .content-dow-cv h2{
+        font-size: 36px;
+    }
+}
